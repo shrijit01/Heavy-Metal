@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heavy Metal Gym | Rewa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      .parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+      }
+      .gradient-overlay {
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4),
+          rgba(24, 24, 27, 1)
+        );
+      }
+      .hover-lift {
+        transition: transform 0.3s ease;
+      }
+      .hover-lift:hover {
+        transform: translateY(-10px);
+      }
+    </style>
+  </head>
+  <body class="bg-zinc-900 text-white font-sans selection:bg-orange-600">
+    <nav
+      class="fixed w-full z-[100] bg-black border-b border-orange-600/30 px-6 py-4"
+    >
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="text-2xl font-black tracking-tighter text-white uppercase">
+          Heavy<span class="text-orange-600">Metal</span>
+        </div>
+
+        <div
+          class="hidden md:flex space-x-8 font-bold uppercase text-xs tracking-widest"
+        >
+          <a href="index.html" class="text-orange-600">Home</a>
+          <a
+            href="about.html"
+            class="text-white hover:text-orange-600 transition"
+            >About</a
+          >
+          <a
+            href="contact.html"
+            class="text-white hover:text-orange-600 transition"
+            >Contact</a
+          >
+        </div>
+
+        <button
+          id="menu-btn"
+          class="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 focus:outline-none z-[110]"
+        >
+          <span
+            id="line1"
+            class="w-6 h-0.5 bg-orange-600 transition-all duration-300"
+          ></span>
+          <span
+            id="line2"
+            class="w-6 h-0.5 bg-orange-600 transition-all duration-300"
+          ></span>
+          <span
+            id="line3"
+            class="w-6 h-0.5 bg-orange-600 transition-all duration-300"
+          ></span>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden fixed inset-0 bg-zinc-950 z-[105] flex flex-col items-center justify-center space-y-8 text-2xl font-black uppercase italic tracking-tighter"
+      >
+        <a href="index.html" class="text-orange-600">Home</a>
+        <a href="about.html" class="text-white">About</a>
+        <a href="contact.html" class="text-white">Contact</a>
+        <div
+          class="text-sm not-italic font-bold text-zinc-500 tracking-widest mt-10"
+        >
+          REWA | 07223026529
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="h-screen relative flex items-center justify-center overflow-hidden"
+    >
+      <img
+        src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=2070"
+        class="absolute inset-0 w-full h-full object-cover"
+        alt="Gym Hero"
+      />
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div
+        class="relative z-10 text-center px-4 animate__animated animate__fadeInUp"
+      >
+        <h1 class="text-6xl md:text-8xl font-black italic mb-4">
+          REDEFINE <span class="text-orange-600">STRENGTH</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-8 font-light">
+          Rewa's premier heavy-lifting facility. Professional coaching and elite
+          equipment for serious results.
+        </p>
+        <a
+          href="#explore"
+          class="border-2 border-orange-600 text-orange-600 px-10 py-4 font-black hover:bg-orange-600 hover:text-white transition uppercase tracking-tighter"
+          >Explore the Gym</a
+        >
+      </div>
+    </section>
+
+    <section
+      class="bg-black py-16 grid grid-cols-2 md:grid-cols-4 gap-8 px-6 text-center border-y border-zinc-800"
+    >
+      <div>
+        <h3 class="text-4xl font-black text-orange-600">1200+</h3>
+        <p class="text-zinc-500 uppercase text-xs tracking-widest">
+          Sq. Ft Area
+        </p>
+      </div>
+      <div>
+        <h3 class="text-4xl font-black text-orange-600">10+</h3>
+        <p class="text-zinc-500 uppercase text-xs tracking-widest">
+          Pro Trainers
+        </p>
+      </div>
+      <div>
+        <h3 class="text-4xl font-black text-orange-600">500+</h3>
+        <p class="text-zinc-500 uppercase text-xs tracking-widest">
+          Active Members
+        </p>
+      </div>
+      <div>
+        <h3 class="text-4xl font-black text-orange-600">06 AM</h3>
+        <p class="text-zinc-500 uppercase text-xs tracking-widest">
+          Opening Time
+        </p>
+      </div>
+    </section>
+
+    <section id="explore" class="py-24 px-6 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 h-[600px]">
+        <div
+          class="bg-cover bg-center rounded-lg shadow-2xl"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1637430308606-86576d8fef3c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&quot;);
+          "
+        ></div>
+        <div class="grid grid-rows-2 gap-4">
+          <div
+            class="bg-cover bg-center rounded-lg shadow-2xl"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1637430308606-86576d8fef3c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&quot;);
+            "
+          ></div>
+          <div
+            class="bg-cover bg-center rounded-lg shadow-2xl"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1646656130630-07af3a262a9b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&quot;);
+            "
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-zinc-950 px-6">
+      <div class="max-w-7xl mx-auto text-center mb-16">
+        <h2 class="text-4xl font-black italic">
+          ELITE <span class="text-orange-600 text-white">PROGRAMS</span>
+        </h2>
+      </div>
+      <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+        <div class="bg-zinc-900 p-10 border border-zinc-800 hover-lift group">
+          <div
+            class="w-12 h-1 text-orange-600 mb-6 bg-orange-600 group-hover:w-full transition-all"
+          ></div>
+          <h3 class="text-2xl font-bold mb-4 italic uppercase">
+            Power Lifting
+          </h3>
+          <p class="text-gray-400">
+            Master the big three: Squat, Bench, and Deadlift with our dedicated
+            lifting platforms.
+          </p>
+        </div>
+        <div class="bg-zinc-900 p-10 border border-zinc-800 hover-lift group">
+          <div
+            class="w-12 h-1 text-orange-600 mb-6 bg-orange-600 group-hover:w-full transition-all"
+          ></div>
+          <h3 class="text-2xl font-bold mb-4 italic uppercase">
+            Body Transformation
+          </h3>
+          <p class="text-gray-400">
+            Personalized diet plans and high-intensity training to sculpt your
+            dream physique.
+          </p>
+        </div>
+        <div class="bg-zinc-900 p-10 border border-zinc-800 hover-lift group">
+          <div
+            class="w-12 h-1 text-orange-600 mb-6 bg-orange-600 group-hover:w-full transition-all"
+          ></div>
+          <h3 class="text-2xl font-bold mb-4 italic uppercase">
+            Cardio & Stamina
+          </h3>
+          <p class="text-gray-400">
+            Modern treadmills and rowers to keep your heart healthy and burning
+            fat.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 px-6 text-center border-t border-zinc-800">
+      <h2 class="text-3xl font-bold mb-4">LOCATED AT THE HEART OF REWA</h2>
+      <p class="text-zinc-400 mb-8">
+        Subhash Marg, Aazad Nagar, Hari Bhushan Nagar, Rewa, MP 486001
+      </p>
+      <a
+        href="contact.html"
+        class="bg-white text-black px-12 py-4 font-black hover:bg-orange-600 hover:text-white transition uppercase"
+        >Join the Movement</a
+      >
+    </section>
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        // Toggle icon between Bars and X
+        if (mobileMenu.classList.contains("hidden")) {
+          menuIcon.classList.replace("fa-times", "fa-bars");
+        } else {
+          menuIcon.classList.replace("fa-bars", "fa-times");
+        }
+      });
+    </script>
+  </body>
+</html>
